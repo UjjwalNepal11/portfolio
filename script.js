@@ -22,31 +22,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  if (window.scrollY > 100) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-});
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
 };
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && !entry.target.classList.contains("animate")) {
       entry.target.classList.add("animate");
     }
   });
 }, observerOptions);
-document.querySelectorAll(".skill, .project").forEach((el) => {
-  observer.observe(el);
-});
-window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
-});
+document
+  .querySelectorAll(
+    ".skill, .project, #about h2, .about-content, #skills h2, #projects h2, .projects-grid, #contact h2, .contact-content",
+  )
+  .forEach((el) => {
+    observer.observe(el);
+  });
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
 themeToggle.addEventListener("click", () => {

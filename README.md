@@ -37,6 +37,10 @@ This is my personal portfolio website built with HTML, CSS, and JavaScript. It f
 
 Since this is a static website, you can simply open the `index.html` file in any modern web browser to view the portfolio.
 
+## Deployment
+
+This portfolio is deployed on GitHub Pages with a custom domain (www.bhagwatnepal.com.np).
+
 ## File Structure
 
 ```
@@ -46,7 +50,8 @@ portfolio/
 ├── script.js           # JavaScript functionality
 ├── favicon.ico         # Website favicon
 ├── img.jpeg            # Profile image
-└── My CV.pdf           # Resume/CV download
+├── My CV.pdf           # Resume/CV download
+└── CNAME               # Custom domain configuration for GitHub Pages
 ```
 
 ## Contact
