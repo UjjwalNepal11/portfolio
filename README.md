@@ -23,7 +23,7 @@ This is my personal portfolio website built with HTML, CSS, and JavaScript. It f
 
 ## Live Demo
 
-[![Live Demo](https://bhagwatnepal.com.np)]
+[Live Demo](https://bhagwatnepal.com.np)
 
 ## License
 
