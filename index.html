@@ -3,13 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bhagwat Nepal</title>
+    <title>Bhagwat Nepal | Front-End Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Bhagwat Nepal is a passionate front-end developer specializing in modern web technologies like HTML, CSS, JavaScript, React, Next.js. View projects, skills, and get in touch."
+    />
+    <meta name="google-site-verification" content="VSmaDrkP1GB4Jag58mz_gawBWdIl4u3Zq4lPuLlL5m4" />
+    <meta
+      name="keywords"
+      content="Bhagwat Nepal, front-end developer, web developer, JavaScript, React, Next.js, portfolio, Nepal developer"
+    />
+    <meta name="author" content="Bhagwat Nepal" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bhagwatnepal.com.np/" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta
+      property="og:title"
+      content="Bhagwat Nepal | Front-End Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Bhagwat Nepal - Passionate Front-End Developer creating responsive web experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bhagwatnepal.com.np/" />
+    <meta
+      property="og:image"
+      content="https://bhagwatnepal.com.np/images/img.jpeg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Bhagwat Nepal | Front-End Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Front-End Developer Portfolio - HTML, CSS, JavaScript, React projects"
+    />
+    <meta
+      name="twitter:image"
+      content="https://bhagwatnepal.com.np/images/img.jpeg"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bhagwat Nepal",
+        "jobTitle": "Front-End Developer",
+        "url": "https://bhagwatnepal.com.np/",
+        "image": "https://bhagwatnepal.com.np/images/img.jpeg",
+        "description": "Passionate front-end developer with 3+ years experience in HTML, CSS, JavaScript, React, and Next.js. Creating beautiful, responsive web experiences.",
+        "sameAs": [
+          "https://github.com/UjjwalNepal11",
+          "https://www.linkedin.com/in/ujjwal-nepal-89a22139b"
+        ],
+        "knowsAbout": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jhapa",
+          "addressCountry": "NP"
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="preconnect"
+      href="https://cdn.jsdelivr.net/npm/@emailjs/browser@4"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <link
       rel="stylesheet"
@@ -35,6 +118,7 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
+          <div class="mobile-nav-backdrop"></div>
           <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -45,16 +129,22 @@
     </header>
     <section id="hero">
       <div class="hero-container">
-        <div class="hero-content">
-          <h2>Front-End Developer</h2>
-          <h3>Hey, I'm Bhagwat Nepal</h3>
-          <p>
+        <div class="hero-content stagger-hero">
+          <h2 class="stagger-item">Front-End Developer</h2>
+          <h3 class="stagger-item stagger-delay-2">Hey, I'm Bhagwat Nepal</h3>
+          <p class="stagger-item stagger-delay-3">
             I create beautiful, responsive, and user-friendly web experiences.
           </p>
-          <a href="#contact" class="btn">Get In Touch</a>
+          <a href="#contact" class="btn stagger-item stagger-delay-4"
+            >Get In Touch</a
+          >
         </div>
         <div class="hero-image">
-          <img src="img.jpeg" alt="Profile Picture" />
+          <img
+            src="images/img.jpeg"
+            alt="Bhagwat Nepal professional profile photo - Front-End Developer from Nepal"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
@@ -79,16 +169,16 @@
     <section id="skills">
       <div class="container">
         <h2>My Skills</h2>
-        <div class="skills-container">
+        <div class="skills-container stagger-skills">
           <button class="nav-btn prev-btn" id="prev-btn"><</button>
           <div class="skills-grid">
-            <div class="skill">
+            <div class="skill stagger-item">
               <i class="fab fa-html5"></i>
-              <h3>HTML5</h3>
+              <h3>HTML</h3>
             </div>
-            <div class="skill">
+            <div class="skill stagger-item">
               <i class="fab fa-css3-alt"></i>
-              <h3>CSS3</h3>
+              <h3>CSS</h3>
             </div>
             <div class="skill">
               <i class="fab fa-js-square"></i>
@@ -110,17 +200,19 @@
               <i class="fab fa-node-js"></i>
               <h3>Node.js</h3>
             </div>
+
             <div class="skill">
-              <i class="fab fa-bootstrap"></i>
-              <h3>Bootstrap</h3>
+              <i class="devicon-tailwindcss-plain colored"></i>
+              <h3 style="margin-top: 10px">Tailwind CSS</h3>
             </div>
+            <div class="skill">
+              <i class="devicon-typescript-plain colored"></i>
+              <h3 style="margin-top: 10px">TypeScript</h3>
+            </div>
+
             <div class="skill">
               <i class="fab fa-git-alt"></i>
               <h3>Git</h3>
-            </div>
-            <div class="skill">
-              <i class="fab fa-sass"></i>
-              <h3>Sass</h3>
             </div>
           </div>
           <button class="nav-btn next-btn" id="next-btn">></button>
@@ -130,45 +222,181 @@
     <section id="projects">
       <div class="container">
         <h2>My Projects</h2>
-        <div class="projects-grid">
-          <div class="project">
-            <img src="https://via.placeholder.com/400x250" alt="Project 1" />
-            <div class="project-info">
-              <h3>E-commerce Website</h3>
-              <p>
-                A fully responsive e-commerce platform built with React and
-                Node.js.
-              </p>
-              <div class="project-links">
-                <a href="#" class="btn-small">Live Demo</a>
-                <a href="#" class="btn-small">GitHub</a>
+        <div class="projects-container stagger-projects">
+          <button class="nav-btn prev-btn" id="project-prev-btn"><</button>
+          <div class="projects-grid">
+            <div class="project stagger-item">
+              <img
+                src="images/p1.jpg"
+                alt="ContentLens AI Content Intelligence tool - Next.js React TypeScript project screenshot"
+                loading="lazy"
+              />
+
+              <div class="project-info">
+                <h3>ContentLens – AI Powered Content Intelligence</h3>
+                <p>
+                  ContentLens is a web-based tool designed to analyze and
+                  evaluate digital content for better readability, structure,
+                  and engagement. The platform helps users review their content
+                  and gain insights that improve clarity and overall quality.
+                </p>
+                <div class="tech-stack">
+                  <span
+                    ><i class="devicon-nextjs-original-wordmark"></i>
+                    Next.js</span
+                  >
+                  <span
+                    ><i class="devicon-react-original colored"></i> React</span
+                  >
+                  <span
+                    ><i class="devicon-typescript-plain colored"></i>
+                    TypeScript</span
+                  >
+                  <span
+                    ><i class="devicon-tailwindcss-plain colored"></i> Tailwind
+                    CSS</span
+                  >
+                  <span> <i class="devicon-prisma-original"></i> Prisma</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://contentlens.bhagwatnepal.com.np"
+                    target="_blank"
+                    class="btn-small"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/UjjwalNepal11/ContentLens"
+                    target="_blank"
+                    class="btn-small"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project stagger-item">
+              <img
+                src="images/p2.jpg"
+                alt="Weatherly real-time weather forecast app - React Vite Tailwind CSS project preview"
+                loading="lazy"
+              />
+
+              <div class="project-info">
+                <h3>Weatherly - Real-time Weather Intelligence</h3>
+                <p>
+                  The Weather Forecast Web App is a responsive web application
+                  that provides real-time weather information for any city. It
+                  allows users to quickly check current weather conditions and
+                  forecasts using a simple and clean interface.
+                </p>
+                <div class="tech-stack">
+                  <span
+                    ><i class="devicon-react-original colored"></i> React</span
+                  >
+                  <span><i class="devicon-vitejs-plain colored"></i> Vite</span>
+                  <span
+                    ><i class="devicon-tailwindcss-plain colored"></i> Tailwind
+                    CSS</span
+                  >
+                  <span><i class="fas fa-cloud-sun"></i> Weather API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://ujjwalnepal11.github.io/weather-forecast"
+                    target="_blank"
+                    class="btn-small"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/UjjwalNepal11/weather-forecast"
+                    target="_blank"
+                    class="btn-small"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project stagger-item">
+              <img
+                src="images/p3.jpg"
+                alt="Snake Game JavaScript Canvas arcade game - Classic browser game project"
+                loading="lazy"
+              />
+
+              <div class="project-info">
+                <h3>Snake Game - JavaScript Canvas Arcade</h3>
+                <p>
+                  The Snake Game is a classic arcade-style browser game built
+                  using JavaScript. Players control a snake that moves around
+                  the grid, collecting food to grow longer while avoiding
+                  collisions with the walls and its own body.
+                </p>
+                <div class="tech-stack">
+                  <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                  <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                  <span
+                    ><i class="devicon-javascript-plain colored"></i>
+                    JavaScript</span
+                  >
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://ujjwalnepal11.github.io/snake-game"
+                    target="_blank"
+                    class="btn-small"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/UjjwalNepal11/snake-game"
+                    target="_blank"
+                    class="btn-small"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project stagger-item">
+              <img
+                src="images/p4.jpg"
+                alt="Amazon Clone e-commerce website demo - HTML CSS JavaScript responsive shopping interface"
+                loading="lazy"
+              />
+
+              <div class="project-info">
+                <h3>Amazon Clone Demo - E-Commerce Website Project</h3>
+                <p>
+                  The E-Commerce Website is a front-end web application that
+                  simulates an online shopping interface.The project
+                  demonstrates how a typical online store layout works,
+                  including product displays, navigation, and user-friendly
+                  design.
+                </p>
+                <div class="tech-stack">
+                  <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                  <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                  <span
+                    ><i class="devicon-javascript-plain colored"></i>
+                    JavaScript</span
+                  >
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://ujjwalnepal11.github.io/e-commerce"
+                    target="_blank"
+                    class="btn-small"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/UjjwalNepal11/e-commerce"
+                    target="_blank"
+                    class="btn-small"
+                    >GitHub</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="project">
-            <img src="https://via.placeholder.com/400x250" alt="Project 2" />
-            <div class="project-info">
-              <h3>Weather App</h3>
-              <p>
-                A weather application using OpenWeatherMap API with geolocation.
-              </p>
-              <div class="project-links">
-                <a href="#" class="btn-small">Live Demo</a>
-                <a href="#" class="btn-small">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="project">
-            <img src="https://via.placeholder.com/400x250" alt="Project 3" />
-            <div class="project-info">
-              <h3>Portfolio Website</h3>
-              <p>A personal portfolio website showcasing my work and skills.</p>
-              <div class="project-links">
-                <a href="#" class="btn-small">Live Demo</a>
-                <a href="#" class="btn-small">GitHub</a>
-              </div>
-            </div>
-          </div>
+          <button class="nav-btn next-btn" id="project-next-btn">></button>
         </div>
       </div>
     </section>
@@ -185,17 +413,22 @@
               <i class="fas fa-map-marker-alt"></i>
               <p>Jhapa,Nepal</p>
             </div>
-            <div class="contact-item">
-              <i class="fas fa-download"></i>
-              <a href="My CV.pdf" download>Download CV</a>
-            </div>
           </div>
           <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
+            <input type="text" name="name" placeholder="Your Name" required />
             <span class="error-message" id="name-error"></span>
-            <input type="email" placeholder="Your Email" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
             <span class="error-message" id="email-error"></span>
-            <textarea placeholder="Your Message" required></textarea>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
             <span class="error-message" id="message-error"></span>
             <button type="submit" class="btn">Send Message</button>
             <div class="success-message" id="success-message"></div>
@@ -220,6 +453,10 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
